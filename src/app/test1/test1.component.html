@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="col-sm-12">
+    <!-- <div class="disp" *ngIf= "contents.length > 0; else nocourse">
+      {{ contents }}
+    </div>
+    <ng-template #nocourse>
+      nothing to display !!!!
+    </ng-template>
+    <p appColor>Highlight me!</p>
+   <button class="btn btn-primary">dfhv</button> -->
+    <!-- <ul class="nav nav-pills">
+      <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map View</a></li>
+      <li [class.active]="viewMode == 'list'"><a (click)="viewMode = 'list'">List View</a></li>
+    </ul>
+    <div [ngSwitch]="viewMode">
+      <div *ngSwitchCase="'map'">Map view Content</div>
+      <div *ngSwitchCase="'list'">List view Content</div>
+   <div *ngSwitchDefault>OtherWise</div>
+    </div>
+<ul>
+  <li *ngFor = "let course of courses">
+   {{ course.name }}
+  </li>
+</ul>
+<button class="btn btn-primary"(click)="onlyodd = !onlyodd">Only show odd numbers</button>
+<ul class="list-group" *ngIf = " onlyodd ">
+  <li class="list-group-item" *ngFor = "let odd of oddnumbers" [ngClass] = "{ 'odd': odd % 2 !== 0 }"
+  [ngStyle]="{backgroundColor: odd % 2 === 0 ? 'red':'yellow'}">
+    {{ odd}}
+  </li>
+
+</ul>
+<ul class="list-group" *ngIf = "!onlyodd">
+  <li class="list-group-item" *ngFor = "let even of evennumbers"[ngClass] = "{ 'even': even % 2 === 0 }">
+    {{ even }}
+
+  </li>
+  </ul>
+<ng-template [ngIf]="onlyodd">
+  <p>Only odd</p>
+</ng-template> -->
+<!-- <div *ngFor = "let user of users">
+<p>{{ user.title }}</p>
+<p>{{ user.platform }}</p>
+<p>{{ user.score }}</p>
+<p>{{ user.genre }}</p>
+<p>{{ user.editors_choice }}</p>
+</div> -->
+<h1>Http Call to Rest Api using httpClient in Angular 8</h1>
+<div class="" *ngFor="let user of users; let i = index" >
+<div *ngIf ="i > 0 ">
+  <div class="col-sm-4">
+  <div class="card " id="row_data">
+  <p class="title_edit">{{i}}{{ user.title}}</p>
+  <p> <div class="row">
+  <div class="col-sm-8">{{user.platform}} </div>
+  <div class="col-sm-4"><span>{{user.score}}</span></div></div>
+
+  <p class="genre_edit">{{user.genre}}</p>
+ <p>{{user.editors_choice}}</p>
+ </div>
+ </div>
+ </div>
+</div>
+<p >{{ errorMessage }}</p>
+</div>
+</div>

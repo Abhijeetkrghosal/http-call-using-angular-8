@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #cdcbd6;
+    font-family: tahoma,arial,helvetica,sans-serif;
+    font-size: 10pt;
+    background: linear-gradient(#FF5722,#000,#000);
+    background-repeat: no-repeat;
+}
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}

@@ -1,0 +1,39 @@
+.odd{
+  color: red;
+}
+.even{
+  color: royalblue;
+}
+div#row_data {
+  background: #000000e0;
+  color: #fff;
+  padding: 20px;
+  font-weight: 600;
+  font-family: cursive;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: -1px 0px 10px 0px rgb(255, 255, 255);
+}
+p.title_edit {
+  height: 40px;
+  color: #FF5722;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-bottom: 1px dashed #FF5722;
+}
+p.genre_edit {
+  color: #09e054;
+  font-size: 19px;
+}
+h1 {
+  font-weight: 800;
+  font-family: cursive;
+}
+span {
+  border: 2px dashed#cdcbd6;
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: #cdcbd6;
+  position: relative;
+  top: 5px;
+}
